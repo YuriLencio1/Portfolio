@@ -1,0 +1,31 @@
+.Cal{
+    background-color: rgba(240, 255, 255, 0.893);
+    border-radius: 20px;
+    margin-top: 150px;
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px;
+    margin-left: 500px;
+}
+
+body{
+    background-color: antiquewhite;
+    font-style: italic;
+    color: black;
+    align-items: center;
+    display: flex;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+}
+div#res{
+        font-style: italic;
+        background-color:  rgb(154, 237, 154);
+        margin-top: 50px;
+    }   
+

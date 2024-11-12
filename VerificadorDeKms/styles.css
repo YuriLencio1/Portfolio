@@ -1,0 +1,45 @@
+body{
+    background-color: #f78e8e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    height: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    width: 500px;
+}
+    
+
+.Interaja{
+    background-color: rgba(240, 255, 255, 0.893);
+    border-radius: 20px;
+    margin-top: 150px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px;
+}
+
+div#res{
+    height: 50px;
+    margin-top: 30px;
+
+}
+.veri{
+    height: 50px;
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 330px;
+    font-weight: bold;
+}

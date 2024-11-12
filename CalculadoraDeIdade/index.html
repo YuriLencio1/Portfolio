@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+       
+
+        <section>
+            <h1>Verificação De Idade</h1>
+            <p>Ano de Nascimento
+                <input type="number" name="textAno" id="textAno" min="0" class=" AnodeNas" >
+            </p>
+            <p >Sexo:
+                 <input type="radio" name="radsex" id="Masc" class="radsex" checked  >
+                    <label for="Masc"> Maculino</label>
+                    <input type="radio" name="radsex" id="Fem">
+                    <label for="Fem"> Femenino</label>
+                    <input type="radio" name="radsex" id="LGBT">
+                    <label for="LGBT"> LGBT+</label>
+            </p>
+
+            <P >
+               <input  type="button" value="verificar"  onclick="verificar()  " class="verifi" >
+            </P>
+        
+
+            <Div id="res">
+                Preencha os dados acima
+            </Div>
+        </section>
+
+        <footer class="footer"> &copy;YuriLencio</footer>
+            <script src="script.js"></script>
+</body>
+</html>

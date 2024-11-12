@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Site de Aluguel de Carros!</h1>
+    </header>
+    <nav>
+        <button onclick="window.location.href='home.html'">Menu Inicial</button>
+        <button id="logoutButton">Deslogar</button>
+        <button onclick="window.location.href='Consumo.html'">Consumo</button>
+        <button onclick="window.location.href='car_registration.html'">Registro de carro</button>
+    </nav>
+
+    <main>
+
+        <h2>Selecione um Carro</h2>
+        <div class="car-list">
+            <div class="car-item" onclick="window.location.href='cars.html'">
+                <h3>Carro A</h3>
+                <p>Disponibilidade: <span class="available">Disponível</span></p>
+            </div>
+            <div class="car-item" onclick="window.location.href='cars.html'">
+                <h3>Carro B</h3>
+                <p>Disponibilidade: <span class="not-available">Indisponível</span></p>
+            </div>
+            <div class="car-item" onclick="window.location.href='cars.html'">
+                <h3>Carro C</h3>
+                <p>Disponibilidade: <span class="available">Disponível</span></p>
+            </div>
+        </div>
+    </main>
+    <script src="Home.js"></script>
+</body>
+<footer class="footerhome"> &copy; YuriLencio</footer>
+
+</html>

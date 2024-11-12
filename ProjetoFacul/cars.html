@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Seleção de Carros para Aluguel</h1>
+    </header>
+    <nav>
+        <button onclick="window.location.href='home.html'">Voltar para Home</button>
+    </nav>
+    <main>
+        <div class="car-list">
+            <div class="car-item" onclick="showCarDetails('Carro A')">
+                <h3>Carro A</h3>
+                <p>Disponibilidade: <span class="available">Disponível</span></p>
+            </div>
+            <div class="car-item" onclick="showCarDetails('Carro B')">
+                <h3>Carro B</h3>
+                <p>Disponibilidade: <span class="not-available">Indisponível</span></p>
+            </div>
+            <div class="car-item" onclick="showCarDetails('Carro C')">
+                <h3>Carro C</h3>
+                <p>Disponibilidade: <span class="available">Disponível</span></p>
+            </div>
+        </div>
+    </main>
+    <!-- Modal para Detalhes do Carro -->
+    <div id="carDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2 id="carTitle">Detalhes do Carro</h2>
+            <div class="carousel">
+                <img id="carImage" src="carro_a1.jpg" alt="Carro">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+    </div>
+    <div id="calendar">
+        <label for="pickup-date">Data de Retirada:</label>
+        <input type="date" id="pickup-date" required>
+        <label for="return-date">Data de Devolução:</label>
+        <input type="date" id="return-date" required>
+        <button id="confirm-dates">Confirmar Datas</button>
+    </div>
+    <script src="cars.js"></script>
+</body>
+<footer class="footerCons"> &copy; YuriLencio</footer>
+
+</html>

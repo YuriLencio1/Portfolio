@@ -1,0 +1,335 @@
+/* CSS Global */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+body {
+   background-color: #f4f4f4;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+}
+
+header {
+   background-color: #007BFF;
+   color: #fff;
+   padding: 20px;
+   width: 100%;
+   text-align: center;
+}
+
+nav {
+   background-color: #f8f9fa;
+   padding: 10px;
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+}
+
+button {
+   padding: 10px 20px;
+   margin: 5px;
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #0056b3;
+}
+
+button:disabled {
+   background-color: #ccc;
+   cursor: not-allowed;
+}
+
+/* Estilo da Tela de Login */
+.login-container {
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 300px;
+   margin-top: 100px;
+}
+
+h2 {
+   margin-bottom: 20px;
+   color: #333;
+   text-align: center;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+label {
+   margin-bottom: 5px;
+   color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+
+/* Estilo da Página Inicial e de Carros */
+.car-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.car-item {
+   background-color: #fff;
+   padding: 20px;
+   margin: 10px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 200px;
+   text-align: center;
+   cursor: pointer;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.available {
+   color: green;
+   font-weight: bold;
+}
+
+.not-available {
+   color: red;
+   font-weight: bold;
+}
+
+/* Estilo do Modal */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding-top: 60px;
+}
+
+.modal-content {
+   background-color: #fff;
+   margin: 5% auto;
+   padding: 20px;
+   border-radius: 8px;
+   width: 80%;
+   max-width: 600px;
+   position: relative;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+   color: #aaa;
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.close:hover {
+   color: #000;
+}
+
+.carousel {
+   position: relative;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.carousel img {
+   width: 100%;
+   height: auto;
+   max-height: 300px;
+   border-radius: 8px;
+}
+
+.prev,
+.next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: background-color 0.3s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+.prev {
+   left: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.date-button {
+   margin: 5px;
+   padding: 10px;
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.date-button:hover {
+   background-color: #0056b3;
+}
+
+/* Estilo para Formulários de Cadastro */
+.form-container {
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 400px;
+   margin-top: 50px;
+}
+
+.form-container form {
+   display: flex;
+   flex-direction: column;
+}
+
+.form-container label {
+   margin-bottom: 5px;
+   color: #555;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+
+/* Estilo do Calendário Atualizado */
+#calendar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+#calendar label {
+   margin-top: 10px;
+   color: #555;
+}
+
+#calendar input[type="date"] {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+
+#confirm-dates {
+   margin-top: 10px;
+   padding: 10px 20px;
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#confirm-dates:hover {
+   background-color: #0056b3;
+}
+
+
+
+
+.cons {
+   background-color: #f78e8e;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+
+}
+
+.Interaja {
+   background-color: rgba(240, 255, 255, 0.893);
+   border-radius: 20px;
+   margin-top: 150px;
+   width: 500px;
+   height: 250px;
+   text-align: center;
+   font-weight: bold;
+   box-shadow: 5px 5px 10px;
+}
+
+div#res {
+   height: 50px;
+   margin-top: 30px;
+
+}
+
+.veri {
+   height: 50px;
+   margin-top: 20px;
+}
+
+.VerificadorDeKms {
+   height: 50px;
+   color: rgb(0, 0, 0);
+   font-size: 25px;
+   font-weight: bold;
+   margin-bottom: 30px;
+   width: 500px;
+}
+
+footer {
+   margin-top: auto;
+   font-weight: bold;
+}

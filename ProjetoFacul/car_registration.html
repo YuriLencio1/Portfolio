@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Carro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Cadastrar Novo Carro</h2>
+    </header>
+    <nav><button onclick="window.location.href='home.html'">Menu Inicial</button></nav>
+    <div class="form-container">
+        <form id="new-car-form">
+            <label for="car-model">Modelo do Carro</label>
+            <input type="text" id="car-model" required>
+            <label for="car-brand">Marca do Carro</label>
+            <input type="text" id="car-brand" required>
+            <label for="car-year">Ano</label>
+            <input type="number" id="car-year" required>
+            <label for="car-price">Preço por Dia (R$)</label>
+            <input type="number" id="car-price" required>
+            <label for="car-image">Imagem do Carro (URL)</label>
+            <input type="text" id="car-image" required>
+            <button type="submit">Cadastrar Carro</button>
+        </form>
+    </div>
+    <script src="car_registration.js"></script>
+</body>
+<footer class="footerCons"> &copy; YuriLencio</footer>
+
+</html>

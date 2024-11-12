@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>Cadastrar Cliente</h2>
+    </header>
+    <div class="form-container">
+        <form id="register-form">
+            <label for="client-name">Nome</label>
+            <input type="text" id="client-name" required>
+            <label for="client-email">E-mail</label>
+            <input type="email" id="client-email" required>
+            <label for="client-password">Senha</label>
+            <input type="password" id="client-password" required>
+            <label for="client-confirm-password">Confirmar Senha</label>
+            <input type="password" id="client-confirm-password" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+<footer class="footerCons"> &copy; YuriLencio</footer>
+
+</html>
